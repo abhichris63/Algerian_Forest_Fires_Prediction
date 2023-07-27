@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css')}}">
+</head>
+<body>
+        
+    <div class="big_box">   
+        <h1>ALGERIAN FOREST FIRE BULK RESULTS</h1>
+
+        <form action="{{ url_for('bulk_prediction')}}" method="POST">
+            <label for="Regression Bulk Prediction" class="label">Bulk Regression Prediction Results</label>
+            <table class="Table">
+                <tr class="tr">
+                    <th class="th">Temperature</th>
+                     <th class="th">Ws</th>
+                     <th class="th">FFMC</th>
+                     <th class="th">DMC</th>
+                     <th class="th">ISI</th>
+                     <th class="th">Predicted FWI</th>
+                </tr>
+
+                <tr class="tr">
+                    <td class="td">{{ results['Temperature'].iloc[0] }}</td>
+                    <td class="td">{{ results['Ws'].iloc[0] }}</td>
+                    <td class="td">{{ results['FFMC'].iloc[0] }}</td>
+                    <td class="td">{{ results['DMC'].iloc[0] }}</td>
+                    <td class="td">{{ results['ISI'].iloc[0] }}</td>
+                    <td class="td">{{r_pred}}</td>
+                </tr>
+            </table>
+        </form>
+
+        <form action="{{ url_for('bulk_prediction')}}" method="POST">
+            <label for="Classification Bulk Prediction" class="label">Classification Bulk Prediction</label>
+            <table class="Table">
+                <tr class="tr">
+                    <th class="th">Temperature</th>
+                    <th class="th">Ws</th>
+                    <th class="th">FFMC</th>
+                    <th class="th">DMC</th>
+                    <th class="th">ISI</th>
+                    <th class="th">Predicted Classes</th>
+                </tr>
+                <tr class="tr">
+                    <td class="td">{{ results['Temperature'].iloc[0] }}</td>
+                    <td class="td">{{ results['Ws'].iloc[0] }}</td>
+                    <td class="td">{{ results['FFMC'].iloc[0] }}</td>
+                    <td class="td">{{ results['DMC'].iloc[0] }}</td>
+                    <td class="td">{{ results['ISI'].iloc[0] }}</td>
+                    <td class="td">{{c_pred}}</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Forest Fire Prediction</title>
+
+</head>
+<body>      
+        <div class="BULK_container">
+			<h1>Algerian Forest Fire Prediction</h1>
+
+            <h3 class="bulk_h3_tag">Bulk Prediction </h3>
+            <form action="{{ url_for('bulk_prediction')}}" method="POST">
+                
+                <div>
+                    <label for="database_name" class="db">Database Name</label>
+                    <input type="text" id="input" placeholder="database_name" name="database_name">
+                </div>
+                <div>
+                    <label for="collection_name" class="db">Collection Name</label>
+                    <input type="text" id="input" placeholder="Collection Name" name="collection_name">
+                </div>
+                <div class="Bulk_sumbit">
+                    <input type="submit" id="PredictButton" class="submit" value="Bulk_sumbit" />
+                </div>
+            </form>
+        </div>
+</body>
+</html>

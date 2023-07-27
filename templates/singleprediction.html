@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forest Fire Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+
+    <div class="main">
+        
+        <h1 class="h1">Algerian Forest Fire Prediction</h1>
+        
+        <div class="subdiv">
+            <div class="container1">
+                <h3 class="h3">Fire Prediction (Classification Model) </h3>
+                <form action="{{ url_for('c_prediction')}}" method="POST">
+                    <div>
+                        <div>
+                            <label for="Temperature">Temperature</label>
+                            <input type="text" id="Temperature" name="Temperature" placeholder="Temperature" />
+                        </div>
+                        <div>
+                            <label for="Ws">Wind Speed</label>
+                            <input type="text" id="Ws" name="Ws" placeholder="Wind speed" />
+                        </div>
+                        <div>
+                            <label for="FFMC"> Fuel Moisture Code </label>
+                            <input type="text" id="FFMC" name="FFMC" placeholder="FFMC" />
+                        </div>
+                        <div>
+                            <label for="DMC">Duff Moisture Code</label>
+                            <input type="text" id="DMC" name="DMC" placeholder="DMC" />
+                        </div>
+                        <div>
+                            <label for="ISI">Initial Spread Index </label>
+                            <input type="text" id="ISI" name="ISI" placeholder="ISI" />
+                        </div>
+                        <div>
+                            <input type="submit" id="PredictButton" class="submit" value="Predict" />
+                        </div>
+                    </div>
+                        <br>
+                        <div class="output">
+                            {{Predict_C}}
+                        </div>
+                        <br>
+                </form>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="container2">
+                <h3 class="h3">Fire Weather Index Prediction (Regression Model) </h3>
+                <form action="{{ url_for('r_prediction')}}" method="POST">
+                    <div>
+                        <div>
+                            <label for="Temperature">Temperature</label>
+                            <input type="text" id="Temperature" name="Temperature" placeholder="Temperature" />
+                        </div>
+                        <div>
+                            <label for="Wind_speed">Wind Speed</label>
+                            <input type="text" id="Ws" name="Wind_speed" placeholder="Wind speed" />
+                        </div>
+                        <div>
+                            <label for="FFMC">Fuel Moisture Code</label>
+                            <input type="text" id="FFMC" name="FFMC" placeholder="FFMC" />
+                        </div>
+                        <div>
+                            <label for="DMC">Duff Moisture Code</label>
+                            <input type="text" id="DMC" name="DMC" placeholder="DMC" />
+                        </div>
+                        <div>
+                            <label for="ISI">Initial Spread Index</label>
+                            <input type="text" id="ISI" name="ISI" placeholder="ISI" />
+                        </div>
+                        <div>
+                            <input type="submit" id="PredictButton" class="submit" value="Predict" />
+                        </div>
+                    </div>
+                        <div class="output">
+                                {{Predict_R}}
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
