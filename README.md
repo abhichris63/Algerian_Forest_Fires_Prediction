@@ -7,7 +7,7 @@
 <br>
 <h3 align='center'><b>Homepage</b></h3>
 
-![Alt text](<App Images/Home.PNG>)
+![Home Page](AppImages/Home.PNG)
 
 <h3>Project is Created by Abhishek B</h3>
 
@@ -96,12 +96,7 @@
 <h3>Contact me</h3>
 
 *   <a href="https://www.linkedin.com/in/abhishek-b-807b75219/" target="_blank">
-    <img src="App Images/LI-Logo.png" width="70" height="20" />
-</a>
-
-
-* <a href="https://github.com/abhichris63" target="_blank">
-    <img src="App Images/GitHub_Logo_White.png" width="70" height="20" />
+    <img src="AppImages/LI-Logo.png" width="70" height="20" />
 </a>
 
 
