@@ -14,7 +14,8 @@
 
 <h3>Project is Created by Abhishek B</h3>
 
-[CLICK HERE TO START AZURE APP](https://forestfireprediction.azurewebsites.net/)
+[CLICK HERE TO START AZURE APP](https://forest-fire-predict.azurewebsites.net/)
+
 
 * This is Forest Fire Prediction Project using **Data Science** and **Machine Learning**.
 * Source Dataset is stored in **MongoDB**.
