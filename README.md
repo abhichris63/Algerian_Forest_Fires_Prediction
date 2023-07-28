@@ -7,7 +7,10 @@
 <br>
 <h3 align='center'><b>Homepage</b></h3>
 
-![Home Page](AppImages/Home.PNG)
+<!--![Home Page](AppImages/Home.PNG)-->
+
+![Home](https://github.com/abhichris63/Algerian_Forest_Fires_Prediction/assets/95648648/de869d9d-7037-4201-9572-e589a4ea6c12)
+
 
 <h3>Project is Created by Abhishek B</h3>
 
@@ -95,8 +98,8 @@
 
 <h3>Contact me</h3>
 
-*   <a href="https://www.linkedin.com/in/abhishek-b-807b75219/" target="_blank">
-    <img src="AppImages/LI-Logo.png" width="70" height="20" />
+* <a href="https://www.linkedin.com/in/abhishek-b-807b75219/" target="_blank">
+    <img src="https://github.com/abhichris63/Algerian_Forest_Fires_Prediction/assets/95648648/e824922c-5b16-4cf4-a183-f43b3f8e280b" width="70" height="20" />
 </a>
 
 
